@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Next Solutions Task</title>
+</head>
+<body>
+    <header>
+        <div class="line-above-header"></div>
+        <div class="header-container">
+            <img src="./img/dog-logo.png" alt="Dog Logo" class="dog-logo">
+            <div class="header-buttons">
+                <i class="fas fa-home"></i>
+                <ul>
+                    <li>ПРОДУКТИ</li>
+                    <li>НОВИНИ</li>
+                    <li>ЗА НАС</li>
+                    <li class="active">КОНТАКТИ</li>
+                    <li>ПАРТНЬОРИ</li>
+                </ul>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <img src="./img/dog-banner.png" alt="" style="width: 100%">
+        </div>
+        <section>
+            <div class="title-container">
+                <div class="upper-title">
+                    <span>Вкусни лакомства</span>
+                </div>
+                <div class="lower-title">
+                    За най-добрите ни приятели
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider-card c4">
+                    <img src="./img/product1.png" alt="">
+                    <div class="card-text-container">
+                        <div class="brand"><div>Bow Wow</div><div>Натурални лакомства</div></div>
+                        <div class="card-title">Заглавие 1</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis voluptatem excepturi, consectetur culpa tempore!</div>
+                    </div>
+                    <button class="see-more-btn">Вижте повече</button>
+                </div>
+                <div class="slider-card c1">
+                    <img src="./img/product2.png" alt="">
+                    <div class="card-text-container">
+                        <div class="brand"><div>Bow Wow</div><div>Класически лакомства</div></div>
+                        <div class="card-title">Заглавие 2</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis voluptatem excepturi, consectetur culpa tempore!</div>
+                    </div>
+                    <button class="see-more-btn">Вижте повече</button>
+                </div>
+                <div class="slider-card c2">
+                    <img src="./img/product3.png" alt="">
+                    <div class="card-text-container">
+                        <div class="brand"><div>Bow Wow</div><div>Мини лакомства</div></div>
+                        <div class="card-title">Заглавие 3</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis voluptatem excepturi, consectetur culpa tempore!</div>
+                    </div>
+                    <button class="see-more-btn">Вижте повече</button>
+                </div>
+                <div class="slider-card c3">
+                    <img src="./img/product4.png" alt="">
+                    <div class="card-text-container">
+                        <div class="brand"><div>Bow Wow</div><div>Специални лакомства</div></div>
+                        <div class="card-title">Заглавие 4</div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis voluptatem excepturi, consectetur culpa tempore!</div>
+                    </div>
+                    <button class="see-more-btn">Вижте повече</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="action-container">
+                <img src="./img/action.png" alt="">
+                <div class="action-text">
+                    <div>Събери 5 празни опаковки от мини лакомства и вземи една безплатна!</div>
+                    <div>
+                        Можете да я получите в участващите магазини или като се свържете с нас
+                        <br>
+                        Промоцията е валидна до 28.02.2016 или до изчерпване на количествата!
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <div class="main-title">За нас / Bow Wow</div>
+                    <div class="sub-title"></div>
+                    <div class="about-description"></div>
+                    <button id="ax" class="see-more-btn">Вижте повече</button>
+                </div>
+                <div class="about-video">
+                    <video width="480" height="300" controls>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="title-container">
+                <div class="upper-title">
+                    <span>Представяме</span>
+                </div>
+                <div class="lower-title">
+                    Продукти на седмицата
+                </div>
+            </div>
+            <div class="promo-container">
+                <div class="promo-card">
+                    <img src="./img/product1.png" alt="">
+                    <div class="card-text-container">
+                        <div class="card-title">Заглавие 1</div>
+                        <div class="brand"><div>Bow Wow</div><div>Натурални лакомства</div></div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis voluptatem excepturi, consectetur culpa tempore!</div>
+                        <div><button class="see-more-btn">Вижте повече</button><img src="./img/badge.png" alt="Badge"></div>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="./img/product2.png" alt="">
+                    <div class="card-text-container">
+                        <div class="card-title">Заглавие 2</div>
+                        <div class="brand"><div>Bow Wow</div><div>Класически лакомства</div></div>
+                        <div class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis voluptatem excepturi, consectetur culpa tempore!</div>
+                        <div><button class="see-more-btn">Вижте повече</button><img src="./img/badge.png" alt="Badge"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../index.js" defer></script>
+</body>
+</html>

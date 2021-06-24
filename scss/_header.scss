@@ -1,0 +1,60 @@
+header {
+  background-color: $bg-white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  .line-above-header {
+    background-color: $primary-green;
+    height: 8px;
+  }
+
+  .header-container {
+    @include positionCenter;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .dog-logo {
+      height: 7rem;
+      transform: translateY(10px);
+    }
+
+    .header-buttons {
+      color: $dark-grey;
+      font-size: 0.9rem;
+      display: flex;
+
+      i {
+        font-size: 1.2rem;
+        color: $primary-green;
+        padding: 10px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          padding: 10px;
+
+          &.active {
+            position: relative;
+
+            &::before {
+              content: "";
+              height: 2px;
+              background-color: $primary-green;
+              width: 100%;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

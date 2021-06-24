@@ -1,0 +1,30 @@
+@import "config";
+@import "header";
+@import "title";
+@import "slider";
+@import "action";
+@import "about";
+@import "promo";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+footer {
+  background-color: $footer-background;
+  height: 20vh;
+}
+
+@import "mobile";

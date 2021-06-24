@@ -1,0 +1,16 @@
+{
+  "name": "nextsolutionstask",
+  "version": "1.0.0",
+  "description": "Responsive website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Zhivko",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
+    "node-sass": "^6.0.0"
+  }
+}

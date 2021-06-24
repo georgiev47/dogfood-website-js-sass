@@ -1,0 +1,39 @@
+#about-section {
+  background-color: #f5f2ef;
+
+  .about-container {
+    @include positionCenter;
+    display: flex;
+    padding: 2rem 0;
+
+    .about-text {
+      padding-right: 2rem;
+
+      .main-title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $dark-grey;
+      }
+
+      .sub-title {
+        color: $primary-green;
+      }
+
+      .about-description {
+        margin: 2rem 0;
+        text-align: justify;
+        color: $dark-grey;
+      }
+
+      .see-more-btn {
+        @include see-more-btn;
+      }
+    }
+  }
+
+  .about-video {
+    video {
+      outline: 10px solid white;
+    }
+  }
+}

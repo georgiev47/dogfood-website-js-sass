@@ -1,0 +1,48 @@
+$primary-green: #85c440;
+$dark-grey: #666666;
+$light-grey: #999999;
+$bg-white: white;
+$center-width: 62%;
+$footer-background: #736357;
+
+@mixin positionCenter {
+  max-width: 1140px;
+  width: 62%;
+  margin: 0 auto;
+}
+
+@mixin see-more-btn {
+  background-color: $primary-green;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  box-shadow: 0px 4px 0px hsla(89, 53%, 51%, 0.6);
+  text-transform: uppercase;
+  min-width: 8rem;
+  cursor: pointer;
+}
+
+// Media queries
+@mixin mediaSmall {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLarge {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

@@ -1,0 +1,62 @@
+.promo-container {
+  @include positionCenter;
+  display: flex;
+
+  .promo-card {
+    margin: 0 1rem;
+    display: flex;
+
+    img {
+      align-self: center;
+      width: 50%;
+    }
+
+    .card-text-container {
+      font-size: 0.8rem;
+      margin-left: 2rem;
+
+      div {
+        margin: 10px auto;
+      }
+
+      .brand {
+        display: flex;
+        height: 50px;
+        text-align: left;
+        width: 80%;
+
+        div:nth-child(1) {
+          color: $dark-grey;
+          border-right: 2px solid $primary-green;
+          padding-right: 15px;
+        }
+        div:nth-child(2) {
+          color: $light-grey;
+          padding-left: 15px;
+        }
+      }
+      .card-title {
+        color: $dark-grey;
+      }
+
+      .card-description {
+        color: $light-grey;
+      }
+
+      div {
+        display: flex;
+
+        .see-more-btn {
+          @include see-more-btn;
+          align-self: center;
+        }
+
+        img {
+          width: 35px;
+          align-self: center;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

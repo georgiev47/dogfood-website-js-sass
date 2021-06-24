@@ -1,0 +1,30 @@
+.action-container {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .action-text {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 19%;
+    top: 20%;
+    @include positionCenter;
+
+    div {
+      width: 50%;
+    }
+
+    div:first-child {
+      padding: 1rem;
+      background-color: rgba(#000000, 0.3);
+    }
+
+    div:nth-child(2) {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+    }
+  }
+}

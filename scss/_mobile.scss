@@ -1,0 +1,41 @@
+// Big screen
+@include mediaXL {
+  .header-container {
+  }
+}
+
+// Desktop or laptop
+@include mediaLarge {
+  header {
+    .header-container {
+      width: 80%;
+
+      .dog-logo {
+        height: 6rem;
+        transform: translateY(5px);
+      }
+
+      .header-buttons {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// Tablet or small laptop
+@include mediaMedium {
+  header {
+    .header-container {
+      width: 80%;
+    }
+  }
+}
+
+// Smartphone
+@include mediaSmall {
+  header {
+    .header-container {
+      width: 80%;
+    }
+  }
+}
